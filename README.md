@@ -9,7 +9,3 @@
 - Dive head-first into the source code. Then start explaining and expanding.
 - Live coding
   - Directly explain thought process, which includes design decisions, best practices, and debugging process.
-
-## TODO
-[ ] Outline
-[ ] Content & exercise for each section
