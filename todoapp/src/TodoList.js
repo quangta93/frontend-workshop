@@ -16,10 +16,6 @@ export const TodoList = () => {
     }]
   );
 
-  const removeItem = id => setTodos(
-    todos => todos.filter(item => (item.id !== id))
-  );
-
   const toggleCompleteState = id => setTodos(
     (todos) => {
       const itemIndex = todos.findIndex(item => (item.id === id));
@@ -39,11 +35,12 @@ export const TodoList = () => {
 
   return (
     <div>
-      {todos.map(item => (
+      {(todos.length === 0)
+        ? 'Nothing to Complete'
+        : todos.map(item => (
         <TodoItem
           {...item}
           key={item.id}
-          onRemove={() => removeItem(item.id)}
           onToggle={() => toggleCompleteState(item.id)}
         />
       ))}
