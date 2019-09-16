@@ -4,7 +4,7 @@
     - basic programming concepts e.g. variables, loops, conditional statements
     - familiar with html/css/javascript
 1. Objectives
-    - How to create a single-page application with **ReactJS**, **JSS** and **redux**
+    - Create a single-page application with **ReactJS**, **JSS** and **redux**
 1. How browser works?
     - [Main components of a browser](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#The_browser_high_level_structure)
         - User Interface
@@ -44,4 +44,5 @@
     1. Exercises
         1. Counter
         1. TodoApp with local state
-        1. TodoApp with redux
+1. Redux
+    1. [TodoApp with redux](https://github.com/reduxjs/redux/tree/master/examples/todos)
