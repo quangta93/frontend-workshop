@@ -29,9 +29,16 @@ const evenNums = nums.filter(isEven); // [2, 4, 6, 8] -- new array
 
 ## reduce
 ```javascript
+const miniReduce = (accumulator, num) => (accumulator + num);
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-nums.reduce( (accumulator, num) => (accumulator + num), 0 ); // 45
+let accumulator = 0;
+for (let i = 0; i < nums.length; i++) {
+  accumulator = miniReduce(accumulator, nums[i]);
+}
+
+// equivalent
+nums.reduce( miniReduce, 0 ); // 45
 ```
 
 ## every
