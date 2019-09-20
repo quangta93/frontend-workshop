@@ -1,5 +1,8 @@
 # Array Utilities
 
+
+## Imperative vs Declarative Programming
+
 ## map
 ```javascript
 const calculateSquare = num => (num * num);
